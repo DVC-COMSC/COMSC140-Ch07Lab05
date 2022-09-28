@@ -2,13 +2,11 @@
 # ******************************
 # Make your Code
 # ******************************
-import random
-
-numbers1 = []
-numbers2 = []
-result = []
-for i in range(10):
-	numbers1.append(random.randint(0,100))
-	numbers2.append(random.randint(0,100))
-print (numbers1)
-print (numbers2)
+strval = input().split()
+numbers = []
+for v in strval:
+	numbers.append(int(v))
+print (numbers)
+# the below llin 11 are same as the lines from 5 to 8
+# numbers = list(map(int, strval))
+# print (numbers)
